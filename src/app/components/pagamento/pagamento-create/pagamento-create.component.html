@@ -1,0 +1,36 @@
+<mat-card>
+  <mat-card-title>Pagar funcionario</mat-card-title>
+  <form>
+      <mat-form-field>
+          <input matInput placeholder="Nome completo"
+             name="name">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="CPF do funcionario"
+           name="cpf">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Matricula do Funcionario"
+           name="matricula">
+    </mat-form-field>
+      <mat-form-field>
+          <label name="date" value="Data do pagamento"></label>
+          <input matInput [matDatepicker]="picker"
+            name="date">
+          <mat-hint>MM/DD/YYYY</mat-hint>
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Valor"
+          name="valor">
+      </mat-form-field>
+      
+  </form>
+  <button mat-raised-button>
+      Salvar
+  </button>
+  <button mat-raised-button>
+    Cancelar
+  </button>
+</mat-card>

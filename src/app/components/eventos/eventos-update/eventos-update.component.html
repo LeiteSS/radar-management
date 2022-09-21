@@ -1,0 +1,27 @@
+<mat-card>
+  <mat-card-title><h1>Atualizar os eventos</h1></mat-card-title>
+  <form>
+      <mat-form-field>
+          <input matInput placeholder="Titulo do evento"
+             name="titulo">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Descrição do evento"
+           name="descricao">
+    </mat-form-field>
+    <mat-form-field>
+      <label name="date" value="Data do evento"></label>
+      <input matInput [matDatepicker]="picker"
+         name="date">
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </form>
+  <button mat-raised-button>
+      Atualizar
+  </button>
+  <button mat-raised-button>
+    Cancelar
+  </button>
+</mat-card>

@@ -1,0 +1,32 @@
+<mat-card>
+  <mat-card-title>Postar</mat-card-title>
+  <form>
+      <mat-form-field>
+          <input matInput placeholder="Titulo do post"
+             name="post">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Descrição do post"
+           name="descricao">
+    </mat-form-field>
+    <mat-form-field>
+      <label name="conteudo" value="Conteudo do post"></label>
+      <input matInput 
+         name="conteudo">
+    </mat-form-field>
+    <mat-form-field>
+      <label name="date" value="Data da publicação"></label>
+      <input matInput [matDatepicker]="picker"
+         name="date">
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </form>
+  <button mat-raised-button>
+      Postar
+  </button>
+  <button mat-raised-button>
+    Cancelar
+  </button>
+</mat-card>

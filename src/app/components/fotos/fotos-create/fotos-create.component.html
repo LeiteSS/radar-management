@@ -1,0 +1,25 @@
+<mat-card>
+  <mat-card-title>Cadastrar fotos para um desaparecido</mat-card-title>
+  <form>
+      <mat-form-field>
+        <label name="cpf" value="CPF da pessoa"></label>
+        <input matInput
+          name="cpf">
+      </mat-form-field>
+      <mat-form-field>
+          <input matInput placeholder="Texto alternativo"
+             name="alt_text">
+      </mat-form-field>
+      <mat-form-field>
+        <div class="box" cdkDrag>
+          Me balance (onde a foto deverá ser jogada para então ser armazenada)
+        </div>
+    </mat-form-field>
+  </form>
+  <button mat-raised-button>
+      Cadastrar
+  </button>
+  <button mat-raised-button>
+    Cancelar
+  </button>
+</mat-card>

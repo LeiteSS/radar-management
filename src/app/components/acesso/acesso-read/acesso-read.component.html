@@ -1,0 +1,45 @@
+<app-search-bar></app-search-bar>
+<div class="mat-elevation-z4">
+  <table>
+    <!-- Id Column -->
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef>Id</th>
+      <td mat-cell>Id</td>
+    </ng-container>
+
+    <ng-container matColumnDef="matricula">
+      <th mat-header-cell *matHeaderCellDef>Matricula</th>
+      <td mat-cell>Matricula do Funcionario</td>
+    </ng-container>
+
+    <ng-container matColumnDef="date">
+      <th mat-header-cell *matHeaderCellDef>Data</th>
+      <td mat-cell>Data e hora da Entrada</td>
+    </ng-container>
+
+    <ng-container matColumnDef="date">
+      <th mat-header-cell *matHeaderCellDef>Data</th>
+      <td mat-cell>Data e hora da Saida</td>
+    </ng-container>
+
+    <!-- Action Column -->
+    <ng-container matColumnDef="action">
+      <th mat-header-cell *matHeaderCellDef>Ações</th>
+      <td mat-cell>
+          <a routerLink="/acesso/atualizar/1" class="edit">
+              <i class="material-icons">
+                  edit
+              </i>
+          </a>
+          <a routerLink="/acesso/excluir/1" class="delete">
+              <i class="material-icons">
+                  delete
+              </i>
+          </a>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row></tr>
+    <tr mat-row></tr>
+  </table>
+</div>

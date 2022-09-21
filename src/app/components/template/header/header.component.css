@@ -1,0 +1,65 @@
+#topo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--content);
+}
+
+#topo button {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: var(--primary);
+    background-color: var(--white);
+    border: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: var(--primary);
+    
+}
+
+.header a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.header .logo {
+    max-height: 42px;
+}
+
+.header .title-group {
+    padding-left: 25px;
+}
+
+.header .title-group i {
+    padding-right: 5px;
+}
+
+.header span button {
+    margin: 15px;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    border: none;
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.profile {
+    color: var(--continuos-white);
+    font-size: 0.85rem;
+    
+}
+
+.profile span {
+    padding-top: 5px;
+}

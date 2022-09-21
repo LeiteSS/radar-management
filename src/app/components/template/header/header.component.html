@@ -1,0 +1,29 @@
+<header id="topo">
+    <div id="items-acessibilidade">
+        <button routerLink="/acessibilidade">Acessibilidade</button>
+        <button (click)="setFontSize('a+')">A+</button>
+        <button (click)="setFontSize('a-')">A-</button>
+        <button (click)="toogle()">Contraste</button>
+    </div>
+</header>
+<mat-toolbar class="nav header mat-elevation-z4">
+    <div class="item">
+        <a routerLink="/">
+            <img class="logo" src="assets/img/Branco.png" alt="logo">
+        </a>
+    </div>
+    <div class="profile">
+        <span>
+            <i class="material-icons">
+                person
+            </i>
+            Ronaldo Josefino Leite Matarazzo
+        </span>
+        <a href="https://radar-client.netlify.app/">
+            <i class="material-icons">
+                logout
+            </i>
+            Sair
+        </a>
+    </div>
+</mat-toolbar>

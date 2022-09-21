@@ -1,0 +1,25 @@
+<mat-card>
+  <mat-card-title><h1>Cadastrar parceiria</h1></mat-card-title>
+  <form>
+      <mat-form-field>
+          <input matInput placeholder="Nome da empresa"
+             name="nome_empresa">
+      </mat-form-field>
+      <mat-form-field>
+        <label name="cnpj" value="CNPJ da empresa"></label>
+        <input matInput
+           name="cnpj">
+      </mat-form-field>
+      <mat-form-field>
+        <textarea matInput placeholder="Descrição da empresa"
+           name="descricao"></textarea>
+    </mat-form-field>
+    
+  </form>
+  <button mat-raised-button>
+      Cadastrar
+  </button>
+  <button mat-raised-button>
+    Cancelar
+  </button>
+</mat-card>

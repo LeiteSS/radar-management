@@ -1,0 +1,76 @@
+<mat-sidenav-container class="container">
+    <mat-sidenav class="sidenav" mode="side" opened 
+        fixedInViewport="true" fixedTopGap="64">
+        <mat-nav-list class="nav-list">
+            <a mat-list-item routerLink="/">
+                <i class="material-icons">
+                    home
+                </i>
+                Dashboard
+            </a>
+            <a mat-list-item  routerLink="/desaparecidos">
+                <i class="material-icons">
+                    person
+                </i>
+                Desaparecidos
+            </a>
+            <a mat-list-item  routerLink="/voluntarios">
+                <i class="material-icons">
+                    person_add
+                </i>
+                Voluntarios
+            </a>
+            <a mat-list-item  routerLink="/eventos">
+                <i class="material-icons">
+                    event_note
+                </i>
+                Eventos
+            </a>
+            <a mat-list-item  routerLink="/recompensas">
+                <i class="material-icons">
+                    card_giftcard
+                </i>
+                Recompensas
+            </a>
+            <a mat-list-item  routerLink="/enderecos">
+                <i class="material-icons">
+                    where_to_vote
+                </i>
+                Endereços
+            </a>
+            <a mat-list-item  routerLink="/posts">
+                <i class="material-icons">
+                    bubble_chart
+                </i>
+                Posts
+            </a>
+            <a mat-list-item  routerLink="/encontrados">
+                <i class="material-icons">
+                    person
+                </i>
+                Encontrados
+            </a>
+            <a mat-list-item  routerLink="/doacoes">
+                <i class="material-icons">
+                    money
+                </i>
+                Doações
+            </a>
+            <a mat-list-item  routerLink="/mensagens">
+                <i class="material-icons">
+                    mail
+                </i>
+                Mensagens Reportadas
+            </a>
+            <a mat-list-item  routerLink="/ultima">
+                <i class="material-icons">
+                    where_to_vote
+                </i>
+                Ultima vez vista
+            </a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content class="content">
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

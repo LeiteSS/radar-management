@@ -1,0 +1,35 @@
+<mat-card>
+  <mat-card-title>Entrada/Saida de funcionarios</mat-card-title>
+  <form>
+      <mat-form-field>
+        <input matInput placeholder="Matricula do Funcionario"
+           name="cpf">
+    </mat-form-field>
+    <mat-form-field>
+        <label name="date" value="Data e hora da entrada"></label>
+        <input matInput [matDatepicker]="picker"
+           name="date">
+        <mat-hint>MM/DD/YYYY HH:mm</mat-hint>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field>
+      <label name="date" value="Data e hora da saida"></label>
+      <input matInput [matDatepicker]="picker"
+         name="date">
+      <mat-hint>MM/DD/YYYY HH:mm</mat-hint>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Situacao"
+       name="situacao">
+</mat-form-field>
+  </form>
+  <button mat-raised-button>
+      Salvar
+  </button>
+  <button mat-raised-button>
+    Cancelar
+  </button>
+</mat-card>

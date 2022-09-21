@@ -1,0 +1,40 @@
+<app-search-bar></app-search-bar>
+<div class="mat-elevation-z4">
+  <table>
+    <!-- Id Column -->
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef>Id</th>
+      <td mat-cell>Id</td>
+    </ng-container>
+
+    <ng-container matColumnDef="cpf">
+      <th mat-header-cell *matHeaderCellDef>CPF/th>
+      <td mat-cell>CPF/td>
+    </ng-container>
+
+    <ng-container matColumnDef="foto">
+      <th mat-header-cell *matHeaderCellDef>FOTO</th>
+      <td mat-cell>FOTO</td>
+    </ng-container>
+
+    <!-- Action Column -->
+    <ng-container matColumnDef="action">
+      <th mat-header-cell *matHeaderCellDef>Ações</th>
+      <td mat-cell>
+          <a routerLink="/foto/atualizar/1" class="edit">
+              <i class="material-icons">
+                  edit
+              </i>
+          </a>
+          <a routerLink="/foto/excluir/1" class="delete">
+              <i class="material-icons">
+                  delete
+              </i>
+          </a>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row></tr>
+    <tr mat-row></tr>
+  </table>
+</div>

@@ -1,0 +1,55 @@
+<app-search-bar></app-search-bar>
+<div class="mat-elevation-z4">
+  <table>
+    <!-- Id Column -->
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef>Id</th>
+      <td mat-cell>Id</td>
+    </ng-container>
+
+    <ng-container matColumnDef="logradouro">
+      <th mat-header-cell *matHeaderCellDef>Logradouro/th>
+      <td mat-cell>Logradouro/td>
+    </ng-container>
+
+    <ng-container matColumnDef="bairro">
+      <th mat-header-cell *matHeaderCellDef>Bairro</th>
+      <td mat-cell>Bairro</td>
+    </ng-container>
+
+    <ng-container matColumnDef="num_casa_start">
+      <th mat-header-cell *matHeaderCellDef>Numero casa Inicio</th>
+      <td mat-cell>Numero casa inicio</td>
+    </ng-container>
+
+    <ng-container matColumnDef="num_casa_start">
+      <th mat-header-cell *matHeaderCellDef>Numero casa fim</th>
+      <td mat-cell>Numero casa fim</td>
+    </ng-container>
+
+    <ng-container matColumnDef="descricao_endereco">
+      <th mat-header-cell *matHeaderCellDef>Descrição das proximidades</th>
+      <td mat-cell>Descrição das proximidades</td>
+    </ng-container>
+
+    <!-- Action Column -->
+    <ng-container matColumnDef="action">
+      <th mat-header-cell *matHeaderCellDef>Ações</th>
+      <td mat-cell>
+          <a routerLink="/desaparecidos/atualizar/1" class="edit">
+              <i class="material-icons">
+                  edit
+              </i>
+          </a>
+          <a routerLink="/desaparecidos/excluir/1" class="delete">
+              <i class="material-icons">
+                  delete
+              </i>
+          </a>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row></tr>
+    <tr mat-row></tr>
+  </table>
+</div>
