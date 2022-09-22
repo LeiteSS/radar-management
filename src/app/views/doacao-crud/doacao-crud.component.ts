@@ -14,7 +14,7 @@ export class DoacaoCrudComponent implements OnInit {
   }
 
   navigateToDoar(): void {
-    this.router.navigate(['/doar'])
+    this.router.navigate(['/doacao/cadastrar'])
   }
 
 }

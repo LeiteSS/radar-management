@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 import { ETheme } from './enums/ETheme.enum';
 import { HeaderService } from './header.service';
@@ -14,7 +14,6 @@ export class HeaderComponent implements OnInit {
   public nome: string = ETheme.NOME_COM_CONTRASTE;
 
   font_size = 16;
-
   setFontSize(idd: string) {
 
     //calc font size
@@ -47,6 +46,7 @@ export class HeaderComponent implements OnInit {
     return (this.nome = ETheme.NOME_COM_CONTRASTE)
   }
 
+  //
   get title(): string {
     return this.headerService.headerData.title
   }
