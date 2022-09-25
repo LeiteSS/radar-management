@@ -22,7 +22,7 @@
     display: flex;
     align-items: center;
     background-color: var(--primary);
-    
+    margin-bottom: 30px;
 }
 
 .header a {
