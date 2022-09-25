@@ -1,7 +1,13 @@
 <mat-sidenav-container class="container">
     <mat-sidenav class="sidenav" mode="side" opened 
-        fixedInViewport="true" fixedTopGap="64">
+        fixedInViewport="true" fixedTopGap="75">
+       
         <mat-nav-list class="nav-list">
+            <input type="checkbox" id="bt_menu">
+        <label for="bt_menu" mat-icon-button fxHide fxShow.xs>
+            <mat-icon>menu</mat-icon>
+        </label>
+            <div id="menu">
             <a mat-list-item routerLink="/">
                 <i class="material-icons">
                     home
@@ -68,6 +74,7 @@
                 </i>
                 Ultima vez vista
             </a>
+        </div>
         </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content class="content">

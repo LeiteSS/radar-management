@@ -1,6 +1,7 @@
 .sidenav {
     background-color: var(--primary);
     width: 200px;
+    border: 0px;
 }
 
 .sidenav a {
@@ -15,3 +16,66 @@
     padding: 16px;
     background-color: var(--content);
 }
+
+  input{
+    display: none;
+}
+
+  label[for="bt_menu"]{
+    display: none;
+  }
+
+  /*Responsividade*/
+  @media screen and (max-width: 760px){
+    .mat-icon {
+        font-size: 40px;
+    }
+
+    label{
+        padding-left: 10%;
+        padding-top: 5px;
+    }
+
+    .sidenav{
+        background-color: transparent;
+    }
+
+    
+    label[for="bt_menu"]{
+       display: block;        
+
+    }
+
+    mat-sidenav-content{
+        margin-left: 0 !important; 
+        background-color: none;
+    }
+
+    mat-sidenav{
+        position: fixed;
+    }
+    
+  #bt_menu:checked ~ #menu, #bt_menu:checked ~ label{
+        display: block;
+        background-color: var(--primary);
+    }
+
+    #bt_menu:checked ~ #menu{
+        border-bottom-right-radius: 10px;
+    }
+
+   #bt_menu:checked{
+        background-color: var(--primary);
+    }
+
+    mat-nav-list #menu{
+        display: none;
+    }
+
+  }
+
+  @media screen and (max-width: 600px){
+    label{
+    margin-top: -10px;
+  }
+  }
