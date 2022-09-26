@@ -39,7 +39,6 @@
     .sidenav{
         background-color: transparent;
     }
-
     
     label[for="bt_menu"]{
        display: block;        
@@ -61,7 +60,7 @@
     }
 
     #bt_menu:checked ~ #menu{
-        border-bottom-right-radius: 10px;
+        height: calc(100vh - 4em);
     }
 
    #bt_menu:checked{
