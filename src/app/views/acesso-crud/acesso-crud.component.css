@@ -3,3 +3,8 @@ button {
   background-color: var(--primary);
   color: var(--white);
 }
+
+#conteiner {
+  display: flex;
+  justify-content: flex-end;
+}

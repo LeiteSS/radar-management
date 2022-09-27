@@ -17,6 +17,10 @@
     background-color: var(--content);
 }
 
+#bt-menu {
+    background-color: var(--primary);
+}
+
   input{
     display: none;
 }
@@ -38,6 +42,7 @@
 
     .sidenav{
         background-color: transparent;
+        visibility: hidden;
     }
     
     label[for="bt_menu"]{
@@ -65,7 +70,9 @@
 
    #bt_menu:checked{
         background-color: var(--primary);
+        
     }
+
 
     mat-nav-list #menu{
         display: none;

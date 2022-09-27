@@ -1,5 +1,4 @@
 .search-hero {
-  max-width: 500px;
   padding-bottom: 50px;
   margin:auto;
   display: flex;
@@ -7,15 +6,22 @@
   
 }
 
-.form-control {
-  box-shadow: 0 2px 4px 0 #B0C1D9;
-  border: none;
+#search {
   height: 100%;
+  width: 60%;
 }
-  
 
-button {
-  border: none;
-  height: 21px;
-  background-color: var(--content);
+::ng-deep .mat-focused .mat-form-field-label {
+  /*change color of label*/
+  color: var(--primary) !important;
+ }
+
+ ::ng-deep.mat-form-field-underline {
+  /*change color of underline*/
+  background-color: var(--primary) !important;
+} 
+
+::ng-deep.mat-form-field-ripple {
+ /*change color of underline when focused*/
+ background-color: var(--primary) !important;
 }

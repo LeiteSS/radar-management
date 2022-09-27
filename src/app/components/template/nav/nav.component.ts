@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
+  public icon: string = 'menu';
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(){
   }
 
+  checkValue(event: any){   
+    if (this.icon === 'close') {
+      this.icon = 'menu';
+    } else {
+      this.icon = 'close'
+    }
+ }
 }

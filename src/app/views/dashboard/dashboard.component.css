@@ -24,3 +24,21 @@
 #second {
     margin-left: 10px;
 }
+
+@media screen and (max-width: 600px){
+    .conteiner {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    #second {
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+
+   #card {
+     width: 350px;
+     height: auto;
+   }
+}
