@@ -41,9 +41,10 @@
     }
 
     .sidenav{
-        background-color: transparent;
-        visibility: hidden;
+        display: none;
     }
+
+    
     
     label[for="bt_menu"]{
        display: block;        

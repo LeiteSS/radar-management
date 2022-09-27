@@ -8,7 +8,7 @@ import { HeaderService } from './header.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
+  public icon: string = 'menu';
   constructor(private headerService: HeaderService) { }
 
   public nome: string = ETheme.NOME_COM_CONTRASTE;
@@ -70,9 +70,9 @@ export class HeaderComponent implements OnInit {
     return this.headerService.headerData.title
   }
 
-  get icon(): string {
+  /*get icon(): string {
     return this.headerService.headerData.icon
-  }
+  }*/
 
   get routeUrl(): string {
     return this.headerService.headerData.routeUrl

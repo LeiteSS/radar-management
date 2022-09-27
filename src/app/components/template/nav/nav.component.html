@@ -1,8 +1,13 @@
+<input type="checkbox" id="btn" (change)="checkValue(icon ? 'close' : 'menu')">
+<label for="bt_menu" mat-icon-button>
+    <i id="menu-icon" class="material-icons">{{icon}} </i>
+</label>
+
 <mat-sidenav-container class="container">
-    <mat-sidenav class="sidenav" mode="side" opened 
+    <mat-sidenav id="side" fxShow class="sidenav"  mode="side" opened 
         fixedInViewport="true" fixedTopGap="75">
        
-        <mat-nav-list class="nav-list">
+        <mat-nav-list id="lista" class="nav-list">
             <input type="checkbox" id="bt_menu" (change)="checkValue(icon ? 'close' : 'menu')">
             <label for="bt_menu" mat-icon-button fxHide fxShow.xs>
                 <i id="menu-icon" class="material-icons">{{icon}} </i>

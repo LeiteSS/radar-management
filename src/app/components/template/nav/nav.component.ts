@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
   public icon: string = 'menu';
-
+  public visible: boolean = true;
+  
   constructor() { }
 
   ngOnInit(){
@@ -16,8 +17,11 @@ export class NavComponent implements OnInit {
   checkValue(event: any){   
     if (this.icon === 'close') {
       this.icon = 'menu';
+      document.getElementById('side').style.display = 'none';
     } else {
-      this.icon = 'close'
+      this.icon = 'close';
+      document.getElementById('side').style.display = 'block';
+      document.getElementById('btn').style.display = 'none';
     }
  }
 }
