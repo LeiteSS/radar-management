@@ -57,9 +57,11 @@
 .profile {
     color: var(--continuos-white);
     font-size: 0.85rem;
+    display: flex;
     
 }
 
 .profile span {
     padding-top: 5px;
+    margin: 10px;
 }

@@ -1,1 +1,24 @@
-<p>visto-delete works!</p>
+<mat-card>
+  <mat-card-title>Excluir endereço onde um desaparecido possa ter sido visto</mat-card-title>
+  <form>
+    <mat-form-field>
+      <input matInput placeholder="Armando José Pereira Neto"
+           name="nome" disabled>
+      </mat-form-field>
+      <mat-form-field>
+          <input matInput placeholder="Rua das borboletas"
+               name="logradouro" disabled>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="08467-88"
+             name="cep" disabled>
+    </mat-form-field>
+  </form>
+  <button mat-raised-button color="warn">
+      Excluir
+  </button>
+  
+  <button mat-raised-button>
+      Cancelar
+  </button>
+</mat-card>
